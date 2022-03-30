@@ -1,5 +1,5 @@
 const Home = //html
-`
+  `
 <div class="text-center">
   <h1>Home</h1>
 
@@ -22,10 +22,10 @@ const Home = //html
 `;
 
 export default {
-data() {
-return {
-show: true,
-};
-},
-template: Home,
+  data() {
+    return {
+      show: true,
+    };
+  },
+  template: Home,
 };

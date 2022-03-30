@@ -1,7 +1,7 @@
 const Register = //html
 `
-<div class="container">
-  <h1 class="text-center">Register</h1>
+<div>
+  <h1 class="text-center">{{register }}</h1>
 
   <div class="mb-3 a">
     <label class="float-left form-label" for="exampleFormControlInput1">Email address</label>
@@ -16,5 +16,10 @@ const Register = //html
 `
 
 export default {
+  data() {
+    return {
+      register: 'Register'
+    }
+  },
   template: Register,
 }
