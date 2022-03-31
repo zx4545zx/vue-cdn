@@ -20,7 +20,7 @@
             <router-link class="text-decoration-none" to="/">Home</router-link>
             <router-link class="text-decoration-none" to="/about">About</router-link>
             <router-link class="text-decoration-none" to="/register">Register</router-link>
-            <router-link class="text-decoration-none" :to="`/users/${id}`">User {{id}}</router-link>
+            <router-link class="text-decoration-none" :to="`/users`">User</router-link>
         </nav>
 
         <div class="container">
@@ -32,6 +32,7 @@
 
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script type="module" src="./index.js"></script>
 </body>

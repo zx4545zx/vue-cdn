@@ -1,0 +1,9 @@
+<div id="user" class="m-auto text-center">
+    <h1>All User</h1>
+
+    <div v-for="u in users" :key="u.id">
+        <router-link class="text-decoration-none" :to="`/users/${u.id}`">User ID: {{u.id}}</router-link>
+    </div>
+
+    <button class="btn btn-primary mt-5" @click="increment">Count is: {{ count }}</button>
+</div>
