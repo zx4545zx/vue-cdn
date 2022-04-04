@@ -1,3 +1,8 @@
 export default {
-  template: ``,
-}
+  data() {
+    return {};
+  },
+  props: {
+    message: String,
+  },
+};

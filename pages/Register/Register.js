@@ -1,8 +1,14 @@
 export default {
   data() {
     return {
-      register: 'Register'
-    }
+      register: "Register",
+      email: null,
+      password: null,
+    };
   },
-  template: ``,
-}
+  methods: {
+    handleSubmit() {
+      alert(`email: ${this.email} and password: ${this.password}`)
+    }
+  }
+};

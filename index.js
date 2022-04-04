@@ -4,7 +4,7 @@ import Register from "./pages/Register/Register.js";
 import User from "./pages/User/User.js";
 import UserID from "./pages/User/UserID.js";
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", async () => {
   const home = await axios.get("./pages/Home/Home.html");
   const about = await axios.get("./pages/About/About.html");
   const register = await axios.get("./pages/Register/Register.html");
@@ -30,7 +30,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     routes, // short for `routes: routes`
   });
 
-  const app = Vue.createApp({});
+  const app = Vue.createApp({
+    data() {
+      return {
+        hello: "world",
+      };
+    },
+  });
   app.use(router);
   app.mount("#app");
 });
