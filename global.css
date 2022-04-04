@@ -1,3 +1,8 @@
+@import "./pages/About/about.css";
+@import "./pages/Home/home.css";
+@import "./pages/Register/register.css";
+@import "./pages/User/user.css";
+
 h1 {
     color: red;
 }
